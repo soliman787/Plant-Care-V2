@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "854424120234",
+    "project_id": "soliman-cb8ff",
+    "storage_bucket": "soliman-cb8ff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854424120234:android:e300a02ff581feb7e999d3",
+        "android_client_info": {
+          "package_name": "com.example.plant_care_ut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854424120234-tsa24fg6jbqmjha58svfgdde29epms16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKm8MFmHQUQMV7z3NWjHhbRKOzauhqpfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854424120234-tsa24fg6jbqmjha58svfgdde29epms16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

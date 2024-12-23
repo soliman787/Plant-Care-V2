@@ -1,0 +1,73 @@
+name: plant_care_ut
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.8
+  flutter_localizations:
+    sdk: flutter
+  carousel_slider: ^5.0.0
+  smooth_page_indicator: ^1.1.0
+  device_preview: ^1.2.0
+  font_awesome_flutter: ^10.7.0
+  dio: ^5.4.3+1
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  shared_preferences: ^2.2.3
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  modal_progress_hud_nsn: ^0.5.1
+  badges: ^3.1.2
+  flutter_svg: ^2.0.14
+  camera: ^0.11.0+2
+  google_generative_ai: ^0.4.6
+  http: ^1.2.2
+  image_picker: ^1.0.7
+  dash_chat_2: ^0.0.20
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^4.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+
+
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+flutter_intl:
+  enabled: true
