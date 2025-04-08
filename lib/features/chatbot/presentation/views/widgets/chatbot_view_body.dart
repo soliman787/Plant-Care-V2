@@ -18,6 +18,9 @@ class ChatbotViewBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              IconButton(onPressed: (){
+                Navigator.of(context).pop();
+              }, icon: const Icon(Icons.arrow_back_ios_rounded)),
               Padding(
                 padding: const EdgeInsets.only(right: 24, left: 24),
                 child: Text(
@@ -27,7 +30,7 @@ class ChatbotViewBody extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 24, left: 24),
+                padding: const EdgeInsets.only(right: 10, left: 10),
                 child: RichText(
                   text: TextSpan(
                     children: <TextSpan>[

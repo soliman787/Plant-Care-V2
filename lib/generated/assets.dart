@@ -2,6 +2,9 @@
 class Assets {
   Assets._();
 
+  static const String assetsConvertedInceptionModel = 'assets/converted_Inception_model.tflite';
+  static const String assetsConvertedModel = 'assets/converted_model.tflite';
+  static const String assetsConvertedResNet50Model = 'assets/converted_ResNet50_model.tflite';
   static const String assetsImagesPen = 'assets/images/pen.jpeg';
   static const String iconIcon = 'assets/icon/icon.png';
   static const String imagesApple = 'assets/images/apple.png';

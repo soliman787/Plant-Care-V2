@@ -6,16 +6,10 @@ class ChatbotView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
 
-      appBar: AppBar(
-        surfaceTintColor: const Color(0xFF171717),
 
-      leading: IconButton(onPressed: (){
-        Navigator.of(context).pop();
-      }, icon: const Icon(Icons.arrow_back_ios_rounded)),
-      ),
-      body: const SafeArea(child: ChatbotViewBody()),
+      body: SafeArea(child: ChatbotViewBody()),
     );
   }
 }

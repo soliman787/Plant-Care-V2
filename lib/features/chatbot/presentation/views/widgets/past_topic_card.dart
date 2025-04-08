@@ -13,10 +13,10 @@ class PastTopicCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 12),
       child: Container(
         height: 70,
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        padding: const EdgeInsets.only(left: 5,right: 5),
         margin: const EdgeInsets.symmetric(vertical: 6),
         decoration: BoxDecoration(
           color: const Color(0xFF2E372E),
@@ -27,10 +27,10 @@ class PastTopicCard extends StatelessWidget {
           children: [
             const SizedBox(width: 5,),
             Image.asset(icon),
-            const SizedBox(width: 13,),
+            const SizedBox(width: 5,),
             Text(
               text,
-              style: Styles.styleRegular16.copyWith(color: Colors.white,fontSize: 15),
+              style: Styles.styleRegular16.copyWith(color: Colors.white,fontSize: 14),
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
             ),

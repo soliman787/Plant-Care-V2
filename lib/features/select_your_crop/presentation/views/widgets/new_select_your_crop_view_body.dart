@@ -33,7 +33,7 @@ class _NewSelectYourCropViewBodyState extends State<NewSelectYourCropViewBody> {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         const SizedBox(
-          height: 50,
+          height: 20,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -45,7 +45,7 @@ class _NewSelectYourCropViewBodyState extends State<NewSelectYourCropViewBody> {
                   Text(
                     S.of(context).selectCrops,
                     style: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 17,
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
                     ),
@@ -53,9 +53,10 @@ class _NewSelectYourCropViewBodyState extends State<NewSelectYourCropViewBody> {
                   Text(
                     S.of(context).selectEightCrops,
                     style: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 17,
                       fontWeight: FontWeight.bold,
                       color: Colors.grey,
+                      overflow: TextOverflow.ellipsis
                     ),
                   ),
                   Text(

@@ -131,9 +131,7 @@ class TreatYourCropCard extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30),
                       ),
                     ),
-                    onPressed: () {
-                      // Action for the button
-                    },
+                    onPressed: onPressed,
                     child: Text(
                       "التقط صورة",
                       style: TextStyle(

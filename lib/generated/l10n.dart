@@ -740,10 +740,10 @@ class S {
     );
   }
 
-  /// `Symptoms of the disease appear as silver spots with clear brown edges on the surface of the potato.`
+  /// `Symptoms of the disease appear as silver spots `
   String get Result3 {
     return Intl.message(
-      'Symptoms of the disease appear as silver spots with clear brown edges on the surface of the potato.',
+      'Symptoms of the disease appear as silver spots ',
       name: 'Result3',
       desc: '',
       args: [],

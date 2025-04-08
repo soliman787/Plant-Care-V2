@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:plant_care_ut/core/utils/styles.dart';
 import 'package:plant_care_ut/features/results/presentation/views/widgets/results_view_body.dart';
@@ -5,7 +7,9 @@ import 'package:plant_care_ut/features/results/presentation/views/widgets/result
 import '../../../../generated/l10n.dart';
 
 class ResultsView extends StatelessWidget {
-  const ResultsView({super.key});
+  const ResultsView({super.key, required this.file, required this.numberOfModel});
+  final File? file;
+  final int numberOfModel;
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +25,10 @@ class ResultsView extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          icon: Icon(Icons.arrow_back_ios_rounded),
+          icon: const Icon(Icons.arrow_back_ios_rounded),
         ),
       ),
-      body: SafeArea(child: ResultsViewBody()),
+      body: SafeArea(child: ResultsViewBody(file: file,numberOfModel: numberOfModel,)),
     );
   }
 }

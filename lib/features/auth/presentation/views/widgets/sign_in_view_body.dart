@@ -31,7 +31,9 @@ class _SignInViewBodyState extends State<SignInViewBody> {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.sizeOf(context).height;
     return ModalProgressHUD(
+
       inAsyncCall: isLoading,
       child: SingleChildScrollView(
         child: Center(
@@ -43,8 +45,8 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(
-                    height: 57,
+                   SizedBox(
+                    height: height >1136 ?130:50,
                   ),
                   Center(
                     child: Image.asset(
@@ -59,7 +61,7 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                       style: Styles.styleBold36.copyWith(color: Colors.white),
                     ),
                   ),
-                  const SizedBox(height: 40),
+                  const SizedBox(height: 15),
                   Text(
                     'البريد الالكتروني',
                     style: Styles.styleMedium20.copyWith(color: Colors.white),
@@ -73,14 +75,14 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                       email = data;
                     },
                   ),
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 30),
 
                   // Label and Password TextField
                   Text(
                     'كلمه السر',
                     style: Styles.styleMedium20.copyWith(color: Colors.white),
                   ),
-                  const SizedBox(height: 15),
+                  const SizedBox(height: 10),
                   CustomTextFormField(
                     onChanged: (data) {
                       password = data;
@@ -89,7 +91,7 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                     passwordField: true,
                     icon: Assets.imagesLock,
                   ),
-                  const SizedBox(height: 100),
+                  const SizedBox(height: 50),
 
                   AuthCustomButton(
                     text: 'تسجيل الدخول',

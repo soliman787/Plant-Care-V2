@@ -47,7 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please check if any of the following conditions match the damage you have suffered."),
         "Result2": MessageLookupByLibrary.simpleMessage("Crust disease"),
         "Result3": MessageLookupByLibrary.simpleMessage(
-            "Symptoms of the disease appear as silver spots with clear brown edges on the surface of the potato."),
+            "Symptoms of the disease appear as silver spots "),
         "ResultIncorrect":
             MessageLookupByLibrary.simpleMessage("You find results incorrect"),
         "SearchByPhoto":
