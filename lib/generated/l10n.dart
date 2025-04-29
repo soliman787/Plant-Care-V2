@@ -18,17 +18,20 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(_current != null,
-        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
+    assert(
+      _current != null,
+      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
+    );
     return _current!;
   }
 
   static const AppLocalizationDelegate delegate = AppLocalizationDelegate();
 
   static Future<S> load(Locale locale) {
-    final name = (locale.countryCode?.isEmpty ?? false)
-        ? locale.languageCode
-        : locale.toString();
+    final name =
+        (locale.countryCode?.isEmpty ?? false)
+            ? locale.languageCode
+            : locale.toString();
     final localeName = Intl.canonicalizedLocale(name);
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
@@ -41,8 +44,10 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(instance != null,
-        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
+    assert(
+      instance != null,
+      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
+    );
     return instance!;
   }
 
@@ -62,22 +67,12 @@ class S {
 
   /// `Next`
   String get nextInBoarding {
-    return Intl.message(
-      'Next',
-      name: 'nextInBoarding',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Next', name: 'nextInBoarding', desc: '', args: []);
   }
 
   /// `Skip`
   String get skipInBoarding {
-    return Intl.message(
-      'Skip',
-      name: 'skipInBoarding',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Skip', name: 'skipInBoarding', desc: '', args: []);
   }
 
   /// `Detection of agricultural pests`
@@ -152,122 +147,62 @@ class S {
 
   /// `Potato`
   String get potato {
-    return Intl.message(
-      'Potato',
-      name: 'potato',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Potato', name: 'potato', desc: '', args: []);
   }
 
   /// `Tomato`
   String get tomato {
-    return Intl.message(
-      'Tomato',
-      name: 'tomato',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Tomato', name: 'tomato', desc: '', args: []);
   }
 
   /// `Carrot`
   String get carrot {
-    return Intl.message(
-      'Carrot',
-      name: 'carrot',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Carrot', name: 'carrot', desc: '', args: []);
   }
 
   /// `Grape`
   String get grape {
-    return Intl.message(
-      'Grape',
-      name: 'grape',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Grape', name: 'grape', desc: '', args: []);
   }
 
   /// `Bananas`
   String get bananas {
-    return Intl.message(
-      'Bananas',
-      name: 'bananas',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Bananas', name: 'bananas', desc: '', args: []);
   }
 
   /// `Apple`
   String get apple {
-    return Intl.message(
-      'Apple',
-      name: 'apple',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Apple', name: 'apple', desc: '', args: []);
   }
 
   /// `Watermelon`
   String get watermelon {
-    return Intl.message(
-      'Watermelon',
-      name: 'watermelon',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Watermelon', name: 'watermelon', desc: '', args: []);
   }
 
   /// `Paper`
   String get paper {
-    return Intl.message(
-      'Paper',
-      name: 'paper',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Paper', name: 'paper', desc: '', args: []);
   }
 
   /// `Eggplant`
   String get eggPlant {
-    return Intl.message(
-      'Eggplant',
-      name: 'eggPlant',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Eggplant', name: 'eggPlant', desc: '', args: []);
   }
 
   /// `Cucumber`
   String get cucumber {
-    return Intl.message(
-      'Cucumber',
-      name: 'cucumber',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Cucumber', name: 'cucumber', desc: '', args: []);
   }
 
   /// `Lettuce`
   String get lettuce {
-    return Intl.message(
-      'Lettuce',
-      name: 'lettuce',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Lettuce', name: 'lettuce', desc: '', args: []);
   }
 
   /// `Onion`
   String get onion {
-    return Intl.message(
-      'Onion',
-      name: 'onion',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Onion', name: 'onion', desc: '', args: []);
   }
 
   /// `October 3, Third Sheikhdom`
@@ -312,12 +247,7 @@ class S {
 
   /// `Plant Care`
   String get appName {
-    return Intl.message(
-      'Plant Care',
-      name: 'appName',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Plant Care', name: 'appName', desc: '', args: []);
   }
 
   /// `Treat your crop and help it recover.`
@@ -382,42 +312,22 @@ class S {
 
   /// `Profile`
   String get profile {
-    return Intl.message(
-      'Profile',
-      name: 'profile',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
   }
 
   /// `Community`
   String get forum {
-    return Intl.message(
-      'Community',
-      name: 'forum',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Community', name: 'forum', desc: '', args: []);
   }
 
   /// `Crops`
   String get crops {
-    return Intl.message(
-      'Crops',
-      name: 'crops',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Crops', name: 'crops', desc: '', args: []);
   }
 
   /// `Profile`
   String get yourAccount {
-    return Intl.message(
-      'Profile',
-      name: 'yourAccount',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Profile', name: 'yourAccount', desc: '', args: []);
   }
 
   /// `join the community`
@@ -432,12 +342,7 @@ class S {
 
   /// `sign in`
   String get signIn {
-    return Intl.message(
-      'sign in',
-      name: 'signIn',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('sign in', name: 'signIn', desc: '', args: []);
   }
 
   /// `Grow smart with the world's farmers`
@@ -492,32 +397,17 @@ class S {
 
   /// `Take a photo`
   String get takeImage {
-    return Intl.message(
-      'Take a photo',
-      name: 'takeImage',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Take a photo', name: 'takeImage', desc: '', args: []);
   }
 
   /// `share ...`
   String get share1 {
-    return Intl.message(
-      'share ...',
-      name: 'share1',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('share ...', name: 'share1', desc: '', args: []);
   }
 
   /// `Rate Us`
   String get rate {
-    return Intl.message(
-      'Rate Us',
-      name: 'rate',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Rate Us', name: 'rate', desc: '', args: []);
   }
 
   /// `Field is required`
@@ -542,32 +432,17 @@ class S {
 
   /// `Welcome Ahmed !`
   String get Welcome {
-    return Intl.message(
-      'Welcome Ahmed !',
-      name: 'Welcome',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Welcome Ahmed !', name: 'Welcome', desc: '', args: []);
   }
 
   /// `How`
   String get How {
-    return Intl.message(
-      'How',
-      name: 'How',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('How', name: 'How', desc: '', args: []);
   }
 
   /// `Can I help you`
   String get HowTo {
-    return Intl.message(
-      'Can I help you',
-      name: 'HowTo',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Can I help you', name: 'HowTo', desc: '', args: []);
   }
 
   /// `Search by\nphoto`
@@ -642,12 +517,7 @@ class S {
 
   /// `Your crops`
   String get YourCrops {
-    return Intl.message(
-      'Your crops',
-      name: 'YourCrops',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Your crops', name: 'YourCrops', desc: '', args: []);
   }
 
   /// `Weather conditions`
@@ -682,12 +552,7 @@ class S {
 
   /// `Clear .C°34`
   String get TempCon {
-    return Intl.message(
-      'Clear .C°34',
-      name: 'TempCon',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Clear .C°34', name: 'TempCon', desc: '', args: []);
   }
 
   /// `Watering not recommended.`
@@ -732,12 +597,7 @@ class S {
 
   /// `Crust disease`
   String get Result2 {
-    return Intl.message(
-      'Crust disease',
-      name: 'Result2',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Crust disease', name: 'Result2', desc: '', args: []);
   }
 
   /// `Symptoms of the disease appear as silver spots `
